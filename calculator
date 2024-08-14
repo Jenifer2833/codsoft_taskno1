@@ -1,0 +1,30 @@
+def add(num1,num2):
+    return num1+num2
+def sub(num1,num2):
+    return num1-num2
+def mul(num1,num2):
+    return num1*num2
+def div(num1,num2):
+    return num1/num2
+while(True):
+   print("operation:\n 1-add\n 2-sub\n 3-mul\n 4-div\n")
+     choice=int(input("select choice:"))
+    a=int(input("enter the number"))
+    b=int(input("enter the number")) 
+  if(choice==1):
+     print(a,"+",b,"=",add(a,b))
+  elif(choice==2):
+     print(a,"-",b,"=",sub(a,b))
+  elif(choice==3):
+     print(a,"*",b,"=",mul(a,b))
+  elif(choice==4):
+     print(a,"/",b,"=",div(a,b))
+  else:
+    print("operation is not possible")
+print("do u want to play again[Y/N]")
+ask=input()
+if(ask=="Y" or "y"):
+    continue
+else:
+   break
+       
